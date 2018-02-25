@@ -1,5 +1,5 @@
 /node_modules
-/.sass-cache
-/assest/sass
+.sass-cache
+/assets/sass
 /muestra
-/assest/vendor
+/assets/vendor
