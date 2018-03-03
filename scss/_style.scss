@@ -14,15 +14,12 @@ $color-subtitle:#7f7f7f;
     }
     
     .logo-wrap {
-
         padding: 15px 0;
         width: 100%;
-        width:200px;  
-
+        width:200px;
     }
 
     .logo-img {
-
         max-width: 100%;
         max-height: 100%;
         vertical-align: middle;
@@ -369,34 +366,6 @@ footer{
                 margin-top: 0;
             }
         }
-
-        .pricing {
-            &-icon {
-                display: block;
-                @include font($size: 30px);
-                color: $color-link-hover;
-                margin-bottom: 30px;
-            }
-
-            &-list-item {
-                @include position(relative);
-                @include font($size: 13px);
-                color: $color-link;
-                padding-left: 20px;
-                margin-bottom: 10px;
-
-                &:before {
-                    @include position(absolute, $top: 7px, $left: 0);
-                    @include size(9px, 2px);
-                    background: $color-base;
-                    content: " ";
-                    margin-right: 10px;
-                }
-            }
-        }
     }
 }
 
-.text-light-gray{
-    color:#cfcfcf;
-} 

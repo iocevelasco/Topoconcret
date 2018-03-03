@@ -17,7 +17,7 @@ gulp.task('serve', ['sass'], function() {
 });
 
 gulp.task('autoPrefixer', () =>
-    gulp.src('src/app.scss')
+    gulp.src('scss/**/*.scss')
 
         .pipe(gulp.dest('app/css'))
 );
@@ -52,7 +52,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('watch', function() {
-gulp.watch('scss/main.scss', ['sass']);
+gulp.watch('scss/**/*.scss', ['sass']);
 });
 
  
