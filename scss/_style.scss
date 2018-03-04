@@ -2,7 +2,6 @@
 
 
 $color-base:#ff1321;
-
 $color-subtitle:#7f7f7f;
 
 .header {
@@ -261,28 +260,88 @@ $color-subtitle:#7f7f7f;
 }
 .services{
     h2{
-    font-weight: 300;
-    font-family: Hind, sans-serif;
-    color: #515769;
+    color:$brand-grey-dark;
     line-height: 1.4;
-    margin: 0 0 15px;
-    font-size: 60px;
-    border-left: 5px solid #515769;
-    padding-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 40px;
+    font: 300  4rem  $font-family-base;
+    text-align: center;
+    margin-top: 6rem;
+    padding-bottom: 5rem;
+        &:after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: $brand-red;
+            margin: auto;
+            border-radius: 8px;
+        }
+
     }
 
-    h3{
-    font-weight: 400;
-    font-family: Hind, sans-serif;
-    color: #515769;
-    line-height: 1.4;
-    border-left: 5px solid $color-base;
-    padding-left: 3rem;
-    }
+    .title-section{
+        font-weight: 400;
+        color:$brand-grey-dark;
+        line-height: 1.4;
+        padding:0;
+        font: 300  2.5rem  $font-family-base;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        width: 30%;
+        border-radius: 20px;
+        overflow: hidden;
+        padding-top: 4px;
+        position: relative;
+        border:1px solid ;
+        border-color:$brand-grey-dark;
+        padding-left: 40px;
 
-     h3:nth-child(3){
-     margin-bottom: 30px;
-     }
+        &:before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 15px 0 15px 15px;
+            border-color: transparent transparent transparent $brand-red;
+            position: absolute;
+            top: 5px;
+            left: 0px;
+            border-radius: 10px;
+        }
+
+    }
+    .title-section-line{
+        font-weight: 400;
+        color:$color-white;
+        line-height: 1.4;
+        padding:0;
+        font: 300  2.5rem  $font-family-base;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        width: 30%;
+        border-radius: 20px;
+        overflow: hidden;
+        padding-top: 4px;
+        position: relative;
+        text-align: center;
+        border:1px solid $color-white;
+        margin-bottom: 6rem;
+        margin-top: 2rem;
+        &:before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 15px 0 15px 15px;
+            border-color: transparent transparent transparent $brand-grey-ligth;
+            position: absolute;
+            top: 5px;
+            left: 0px;
+            border-radius: 10px;
+        }
+
+    }
 
 }
 
@@ -369,3 +428,140 @@ footer{
     }
 }
 
+.work-content {
+    .title{
+       border: 1px solid $color-white;
+        border-radius: 20px;
+        padding:2.5px 20px;
+        margin-bottom: 0;
+        color:  $color-white;
+        font-weight: 300;
+        font-size: 2rem;
+    }
+    .title-line{
+        border: 1px solid $color-white;
+         border-radius: 20px;
+         padding:2.5px 20px;
+         margin-bottom: 0;
+         color:  $color-white;
+         font-weight: 300;
+         font-size: 2rem;
+     }
+}
+.interior-design{
+    padding: 3rem 0;
+    background-image: url("../img/bg/bg-design.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    p , h3 , i{
+        color:$color-white;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+    .service {
+     background: transparent;
+     border: 1px solid #fff;
+     margin-bottom: 4rem;
+     padding: 50px 40px;
+        .service-element, .service-info {
+        
+        }
+        .service-icon {
+            display: block;
+            font-size: 6rem;
+            color: $color-white;
+            margin-bottom: 30px;
+        }
+    &:hover {
+        .service-element {
+    
+        }
+        .service-info {
+        
+        }
+    }
+    }
+}
+
+.paint{
+    background: $brand-grey-ligth;
+    margin-bottom: 8rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    .title-section{
+        margin-bottom: 8rem;
+        border-color: $brand-grey-dark;
+        width: 60%;
+        margin: auto;
+        margin-bottom: 8rem;
+        text-align: center;
+        padding-left: 0;
+        &:before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 180px 0 180px 180px;
+            border-color: transparent transparent transparent $brand-red;
+            position: absolute;
+            top: -158px;
+            left: 0px;
+            border-radius: 10px;
+        }
+    }
+    .service {
+        background: transparent;
+        margin-bottom: 4rem;
+        padding: 50px 40px;
+        background-position: center center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        max-width: 350px;
+        min-height: 350px;
+        margin: auto;
+        margin-left: 10%;
+           .service-element, .service-info {
+            bottom: -25px;
+            background: #ffffffdb;
+            padding: 20px;
+            border-radius: 2px;
+            position: absolute;
+                h3{
+                    font: 300  3.5rem  $font-family-base;
+
+                }
+            }
+           }
+           .service-icon {
+               display: block;
+               font-size: 6rem;
+               color: $color-white;
+               margin-bottom: 30px;
+           }
+       &:hover {
+           .service-element {
+       
+           }
+           .service-info {
+
+       }
+       }
+
+       .bg-exterior{
+        background-image: url("../img/servicio-pintura/exterior.jpg");
+        background-size: cover;
+        background-position: 50%;
+       }
+       .bg-interior{
+        background-image: url("../img/servicio-pintura/interior.jpg");
+        background-position: 70%;
+        background-size: cover;
+       }
+}
+
+.container-fluid{
+padding: 0;
+}

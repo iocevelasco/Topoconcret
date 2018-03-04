@@ -1,0 +1,343 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'font-awesome',
+1 verbose cli   '--save',
+1 verbose cli   'dev' ]
+2 info using npm@3.10.10
+3 info using node@v6.12.3
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData font-awesome
+8 silly fetchPackageMetaData dev
+9 silly fetchNamedPackageData font-awesome
+10 silly mapToRegistry name font-awesome
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry data Result {
+13 silly mapToRegistry   raw: 'font-awesome',
+13 silly mapToRegistry   scope: null,
+13 silly mapToRegistry   escapedName: 'font-awesome',
+13 silly mapToRegistry   name: 'font-awesome',
+13 silly mapToRegistry   rawSpec: '',
+13 silly mapToRegistry   spec: 'latest',
+13 silly mapToRegistry   type: 'tag' }
+14 silly mapToRegistry uri https://registry.npmjs.org/font-awesome
+15 silly fetchNamedPackageData dev
+16 silly mapToRegistry name dev
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry data Result {
+19 silly mapToRegistry   raw: 'dev',
+19 silly mapToRegistry   scope: null,
+19 silly mapToRegistry   escapedName: 'dev',
+19 silly mapToRegistry   name: 'dev',
+19 silly mapToRegistry   rawSpec: '',
+19 silly mapToRegistry   spec: 'latest',
+19 silly mapToRegistry   type: 'tag' }
+20 silly mapToRegistry uri https://registry.npmjs.org/dev
+21 verbose request uri https://registry.npmjs.org/font-awesome
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 10:00:52
+24 verbose request id 37367f740a2d5dfd
+25 http request GET https://registry.npmjs.org/font-awesome
+26 verbose request uri https://registry.npmjs.org/dev
+27 verbose request no auth needed
+28 info attempt registry request try #1 at 10:00:52
+29 http request GET https://registry.npmjs.org/dev
+30 http 200 https://registry.npmjs.org/font-awesome
+31 verbose headers { 'content-type': 'application/json; charset=UTF-8',
+31 verbose headers   server: 'UploadServer',
+31 verbose headers   'cache-control': 'max-age=300',
+31 verbose headers   'last-modified': 'Mon, 26 Feb 2018 15:00:10 GMT',
+31 verbose headers   etag: '"5a9420fa-5a54"',
+31 verbose headers   'x-npm-region': 'SA-East',
+31 verbose headers   'content-encoding': 'gzip',
+31 verbose headers   'content-length': '5022',
+31 verbose headers   'accept-ranges': 'bytes',
+31 verbose headers   date: 'Sun, 04 Mar 2018 13:00:51 GMT',
+31 verbose headers   via: '1.1 varnish',
+31 verbose headers   age: '9648',
+31 verbose headers   connection: 'keep-alive',
+31 verbose headers   'x-served-by': 'cache-gru17127-GRU',
+31 verbose headers   'x-cache': 'HIT',
+31 verbose headers   'x-cache-hits': '14',
+31 verbose headers   'x-timer': 'S1520168451.155525,VS0,VE0',
+31 verbose headers   vary: 'Accept-Encoding, Accept' }
+32 silly get cb [ 200,
+32 silly get   { 'content-type': 'application/json; charset=UTF-8',
+32 silly get     server: 'UploadServer',
+32 silly get     'cache-control': 'max-age=300',
+32 silly get     'last-modified': 'Mon, 26 Feb 2018 15:00:10 GMT',
+32 silly get     etag: '"5a9420fa-5a54"',
+32 silly get     'x-npm-region': 'SA-East',
+32 silly get     'content-encoding': 'gzip',
+32 silly get     'content-length': '5022',
+32 silly get     'accept-ranges': 'bytes',
+32 silly get     date: 'Sun, 04 Mar 2018 13:00:51 GMT',
+32 silly get     via: '1.1 varnish',
+32 silly get     age: '9648',
+32 silly get     connection: 'keep-alive',
+32 silly get     'x-served-by': 'cache-gru17127-GRU',
+32 silly get     'x-cache': 'HIT',
+32 silly get     'x-cache-hits': '14',
+32 silly get     'x-timer': 'S1520168451.155525,VS0,VE0',
+32 silly get     vary: 'Accept-Encoding, Accept' } ]
+33 verbose get saving font-awesome to C:\Users\ivelasco\AppData\Roaming\npm-cache\registry.npmjs.org\font-awesome\.cache.json
+34 verbose correctMkdir C:\Users\ivelasco\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+35 http 200 https://registry.npmjs.org/dev
+36 verbose headers { 'content-type': 'application/json; charset=UTF-8',
+36 verbose headers   server: 'UploadServer',
+36 verbose headers   'cache-control': 'max-age=300',
+36 verbose headers   'last-modified': 'Thu, 30 Nov 2017 9:46:18 GMT',
+36 verbose headers   etag: '"5a1fd36a-2347"',
+36 verbose headers   'x-npm-region': 'SA-East',
+36 verbose headers   'content-encoding': 'gzip',
+36 verbose headers   'content-length': '1318',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Sun, 04 Mar 2018 13:00:51 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   age: '0',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-gru17135-GRU',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1520168451.116734,VS0,VE170',
+36 verbose headers   vary: 'Accept-Encoding, Accept' }
+37 silly get cb [ 200,
+37 silly get   { 'content-type': 'application/json; charset=UTF-8',
+37 silly get     server: 'UploadServer',
+37 silly get     'cache-control': 'max-age=300',
+37 silly get     'last-modified': 'Thu, 30 Nov 2017 9:46:18 GMT',
+37 silly get     etag: '"5a1fd36a-2347"',
+37 silly get     'x-npm-region': 'SA-East',
+37 silly get     'content-encoding': 'gzip',
+37 silly get     'content-length': '1318',
+37 silly get     'accept-ranges': 'bytes',
+37 silly get     date: 'Sun, 04 Mar 2018 13:00:51 GMT',
+37 silly get     via: '1.1 varnish',
+37 silly get     age: '0',
+37 silly get     connection: 'keep-alive',
+37 silly get     'x-served-by': 'cache-gru17135-GRU',
+37 silly get     'x-cache': 'MISS',
+37 silly get     'x-cache-hits': '0',
+37 silly get     'x-timer': 'S1520168451.116734,VS0,VE170',
+37 silly get     vary: 'Accept-Encoding, Accept' } ]
+38 verbose get saving dev to C:\Users\ivelasco\AppData\Roaming\npm-cache\registry.npmjs.org\dev\.cache.json
+39 verbose correctMkdir C:\Users\ivelasco\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+40 silly install normalizeTree
+41 silly loadCurrentTree Finishing
+42 silly loadIdealTree Starting
+43 silly install loadIdealTree
+44 silly cloneCurrentTree Starting
+45 silly install cloneCurrentTreeToIdealTree
+46 silly cloneCurrentTree Finishing
+47 silly loadShrinkwrap Starting
+48 silly install loadShrinkwrap
+49 silly loadShrinkwrap Finishing
+50 silly loadAllDepsIntoIdealTree Starting
+51 silly install loadAllDepsIntoIdealTree
+52 silly resolveWithNewModule font-awesome@4.7.0 checking installable status
+53 silly cache add args [ 'font-awesome', null ]
+54 verbose cache add spec font-awesome
+55 silly resolveWithNewModule dev@0.1.3 checking installable status
+56 silly cache add args [ 'dev', null ]
+57 verbose cache add spec dev
+58 silly cache add parsed spec Result {
+58 silly cache add   raw: 'font-awesome',
+58 silly cache add   scope: null,
+58 silly cache add   escapedName: 'font-awesome',
+58 silly cache add   name: 'font-awesome',
+58 silly cache add   rawSpec: '',
+58 silly cache add   spec: 'latest',
+58 silly cache add   type: 'tag' }
+59 silly addNamed font-awesome@latest
+60 verbose addNamed "latest" is being treated as a dist-tag for font-awesome
+61 info addNameTag [ 'font-awesome', 'latest' ]
+62 silly mapToRegistry name font-awesome
+63 silly mapToRegistry using default registry
+64 silly mapToRegistry registry https://registry.npmjs.org/
+65 silly mapToRegistry data Result {
+65 silly mapToRegistry   raw: 'font-awesome',
+65 silly mapToRegistry   scope: null,
+65 silly mapToRegistry   escapedName: 'font-awesome',
+65 silly mapToRegistry   name: 'font-awesome',
+65 silly mapToRegistry   rawSpec: '',
+65 silly mapToRegistry   spec: 'latest',
+65 silly mapToRegistry   type: 'tag' }
+66 silly mapToRegistry uri https://registry.npmjs.org/font-awesome
+67 verbose addNameTag registry:https://registry.npmjs.org/font-awesome not in flight; fetching
+68 silly cache add parsed spec Result {
+68 silly cache add   raw: 'dev',
+68 silly cache add   scope: null,
+68 silly cache add   escapedName: 'dev',
+68 silly cache add   name: 'dev',
+68 silly cache add   rawSpec: '',
+68 silly cache add   spec: 'latest',
+68 silly cache add   type: 'tag' }
+69 silly addNamed dev@latest
+70 verbose addNamed "latest" is being treated as a dist-tag for dev
+71 info addNameTag [ 'dev', 'latest' ]
+72 silly mapToRegistry name dev
+73 silly mapToRegistry using default registry
+74 silly mapToRegistry registry https://registry.npmjs.org/
+75 silly mapToRegistry data Result {
+75 silly mapToRegistry   raw: 'dev',
+75 silly mapToRegistry   scope: null,
+75 silly mapToRegistry   escapedName: 'dev',
+75 silly mapToRegistry   name: 'dev',
+75 silly mapToRegistry   rawSpec: '',
+75 silly mapToRegistry   spec: 'latest',
+75 silly mapToRegistry   type: 'tag' }
+76 silly mapToRegistry uri https://registry.npmjs.org/dev
+77 verbose addNameTag registry:https://registry.npmjs.org/dev not in flight; fetching
+78 verbose get https://registry.npmjs.org/font-awesome not expired, no request
+79 silly addNameTag next cb for font-awesome with tag latest
+80 silly addNamed font-awesome@4.7.0
+81 verbose addNamed "4.7.0" is a plain semver version for font-awesome
+82 verbose get https://registry.npmjs.org/dev not expired, no request
+83 silly addNameTag next cb for dev with tag latest
+84 silly addNamed dev@0.1.3
+85 verbose addNamed "0.1.3" is a plain semver version for dev
+86 silly mapToRegistry name font-awesome
+87 silly mapToRegistry using default registry
+88 silly mapToRegistry registry https://registry.npmjs.org/
+89 silly mapToRegistry data Result {
+89 silly mapToRegistry   raw: 'font-awesome',
+89 silly mapToRegistry   scope: null,
+89 silly mapToRegistry   escapedName: 'font-awesome',
+89 silly mapToRegistry   name: 'font-awesome',
+89 silly mapToRegistry   rawSpec: '',
+89 silly mapToRegistry   spec: 'latest',
+89 silly mapToRegistry   type: 'tag' }
+90 silly mapToRegistry uri https://registry.npmjs.org/font-awesome
+91 verbose addRemoteTarball https://registry.npmjs.org/font-awesome/-/font-awesome-4.7.0.tgz not in flight; adding
+92 verbose addRemoteTarball [ 'https://registry.npmjs.org/font-awesome/-/font-awesome-4.7.0.tgz',
+92 verbose addRemoteTarball   '8fa8cf0411a1a31afd07b06d2902bb9fc815a133' ]
+93 silly mapToRegistry name dev
+94 silly mapToRegistry using default registry
+95 silly mapToRegistry registry https://registry.npmjs.org/
+96 silly mapToRegistry data Result {
+96 silly mapToRegistry   raw: 'dev',
+96 silly mapToRegistry   scope: null,
+96 silly mapToRegistry   escapedName: 'dev',
+96 silly mapToRegistry   name: 'dev',
+96 silly mapToRegistry   rawSpec: '',
+96 silly mapToRegistry   spec: 'latest',
+96 silly mapToRegistry   type: 'tag' }
+97 silly mapToRegistry uri https://registry.npmjs.org/dev
+98 verbose addRemoteTarball https://registry.npmjs.org/dev/-/dev-0.1.3.tgz not in flight; adding
+99 verbose addRemoteTarball [ 'https://registry.npmjs.org/dev/-/dev-0.1.3.tgz',
+99 verbose addRemoteTarball   '89fdc08705e0e7eaef92d012e26751e4d744322a' ]
+100 info retry fetch attempt 1 at 10:00:54
+101 info attempt registry request try #1 at 10:00:54
+102 http fetch GET https://registry.npmjs.org/font-awesome/-/font-awesome-4.7.0.tgz
+103 info retry fetch attempt 1 at 10:00:54
+104 info attempt registry request try #1 at 10:00:54
+105 http fetch GET https://registry.npmjs.org/dev/-/dev-0.1.3.tgz
+106 http fetch 200 https://registry.npmjs.org/dev/-/dev-0.1.3.tgz
+107 http fetch 200 https://registry.npmjs.org/font-awesome/-/font-awesome-4.7.0.tgz
+108 silly fetchAndShaCheck shasum 89fdc08705e0e7eaef92d012e26751e4d744322a
+109 verbose addTmpTarball C:\Users\ivelasco\AppData\Local\Temp\npm-48208-80a4f973\registry.npmjs.org\dev\-\dev-0.1.3.tgz not in flight; adding
+110 verbose addTmpTarball already have metadata; skipping unpack for dev@0.1.3
+111 verbose correctMkdir C:\Users\ivelasco\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+112 silly cache afterAdd dev@0.1.3
+113 verbose afterAdd C:\Users\ivelasco\AppData\Roaming\npm-cache\dev\0.1.3\package\package.json not in flight; writing
+114 verbose correctMkdir C:\Users\ivelasco\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+115 verbose afterAdd C:\Users\ivelasco\AppData\Roaming\npm-cache\dev\0.1.3\package\package.json written
+116 silly fetchAndShaCheck shasum 8fa8cf0411a1a31afd07b06d2902bb9fc815a133
+117 verbose addTmpTarball C:\Users\ivelasco\AppData\Local\Temp\npm-48208-80a4f973\registry.npmjs.org\font-awesome\-\font-awesome-4.7.0.tgz not in flight; adding
+118 verbose addTmpTarball already have metadata; skipping unpack for font-awesome@4.7.0
+119 verbose correctMkdir C:\Users\ivelasco\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+120 silly cache afterAdd font-awesome@4.7.0
+121 verbose afterAdd C:\Users\ivelasco\AppData\Roaming\npm-cache\font-awesome\4.7.0\package\package.json not in flight; writing
+122 verbose correctMkdir C:\Users\ivelasco\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+123 verbose afterAdd C:\Users\ivelasco\AppData\Roaming\npm-cache\font-awesome\4.7.0\package\package.json written
+124 silly fetchNamedPackageData inotify
+125 silly mapToRegistry name inotify
+126 silly mapToRegistry using default registry
+127 silly mapToRegistry registry https://registry.npmjs.org/
+128 silly mapToRegistry data Result {
+128 silly mapToRegistry   raw: 'inotify',
+128 silly mapToRegistry   scope: null,
+128 silly mapToRegistry   escapedName: 'inotify',
+128 silly mapToRegistry   name: 'inotify',
+128 silly mapToRegistry   rawSpec: '',
+128 silly mapToRegistry   spec: 'latest',
+128 silly mapToRegistry   type: 'tag' }
+129 silly mapToRegistry uri https://registry.npmjs.org/inotify
+130 verbose request uri https://registry.npmjs.org/inotify
+131 verbose request no auth needed
+132 info attempt registry request try #1 at 10:00:55
+133 http request GET https://registry.npmjs.org/inotify
+134 http 200 https://registry.npmjs.org/inotify
+135 verbose headers { 'content-type': 'application/json; charset=UTF-8',
+135 verbose headers   server: 'UploadServer',
+135 verbose headers   'cache-control': 'max-age=300',
+135 verbose headers   'last-modified': 'Sun, 11 Feb 2018 9:35:43 GMT',
+135 verbose headers   etag: '"5a800e6f-79fe"',
+135 verbose headers   'x-npm-region': 'SA-East',
+135 verbose headers   'content-encoding': 'gzip',
+135 verbose headers   'content-length': '6067',
+135 verbose headers   'accept-ranges': 'bytes',
+135 verbose headers   date: 'Sun, 04 Mar 2018 13:00:53 GMT',
+135 verbose headers   via: '1.1 varnish',
+135 verbose headers   age: '0',
+135 verbose headers   connection: 'keep-alive',
+135 verbose headers   'x-served-by': 'cache-gru17135-GRU',
+135 verbose headers   'x-cache': 'MISS',
+135 verbose headers   'x-cache-hits': '0',
+135 verbose headers   'x-timer': 'S1520168453.423395,VS0,VE207',
+135 verbose headers   vary: 'Accept-Encoding, Accept' }
+136 silly get cb [ 200,
+136 silly get   { 'content-type': 'application/json; charset=UTF-8',
+136 silly get     server: 'UploadServer',
+136 silly get     'cache-control': 'max-age=300',
+136 silly get     'last-modified': 'Sun, 11 Feb 2018 9:35:43 GMT',
+136 silly get     etag: '"5a800e6f-79fe"',
+136 silly get     'x-npm-region': 'SA-East',
+136 silly get     'content-encoding': 'gzip',
+136 silly get     'content-length': '6067',
+136 silly get     'accept-ranges': 'bytes',
+136 silly get     date: 'Sun, 04 Mar 2018 13:00:53 GMT',
+136 silly get     via: '1.1 varnish',
+136 silly get     age: '0',
+136 silly get     connection: 'keep-alive',
+136 silly get     'x-served-by': 'cache-gru17135-GRU',
+136 silly get     'x-cache': 'MISS',
+136 silly get     'x-cache-hits': '0',
+136 silly get     'x-timer': 'S1520168453.423395,VS0,VE207',
+136 silly get     vary: 'Accept-Encoding, Accept' } ]
+137 verbose get saving inotify to C:\Users\ivelasco\AppData\Roaming\npm-cache\registry.npmjs.org\inotify\.cache.json
+138 verbose correctMkdir C:\Users\ivelasco\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+139 silly resolveWithNewModule inotify@1.4.2 checking installable status
+140 silly rollbackFailedOptional Starting
+141 silly rollbackFailedOptional Finishing
+142 silly runTopLevelLifecycles Finishing
+143 silly install printInstalled
+144 verbose stack Error: Unsupported platform for inotify@1.4.2: wanted {"name":"inotify","version":"1.4.2","author":{"name":"Camilo Aguilar","email":"camilo.aguilar@gmail.com"},"email":"camilo.aguilar@gmail.com","keywords":["inotify","watch","monitor","watch files","watch directories"],"license":"MIT","description":"inotify bindings for v8 javascript engine","repository":{"type":"git","url":"git+ssh://git@github.com/c4milo/node-inotify.git"},"os":["linux"],"engines":{"node":">=0.8"},"main":"inotify","dependencies":{"bindings":"^1.2.1","nan":"^2.3.3"},"scripts":{"test":"node-gyp configure build","install":"node-gyp rebuild"},"gypfile":true,"contributors":[{"name":"Adrian Estrada","email":"edsadr@gmail.com"},{"name":"Alexander Makarenko","email":"estliberitas@gmail.com"},{"name":"Brian Ingalls","email":"bingalls@compete.com"},{"name":"Brian White","email":"mscdex@mscdex.net"},{"name":"Camilo Aguilar","email":"camilo.aguilar@gmail.com"},{"name":"Dan VerWeire","email":"dverweire@gmail.com"},{"name":"FrozenCow","email":"frozencow@gmail.com"},{"name":"Michael Boe","email":"mschuylerb@gmail.com"},{"name":"Yannick Croissant","email":"k1der.country@free.fr"},{"name":"ikokostya","email":"ikokostya@gmail.com"}],"gitHead":"5feed6dc40be4a5d76ae9d30cf339e4f7d70ae54","bugs":{"url":"https://github.com/c4milo/node-inotify/issues"},"homepage":"https://github.com/c4milo/node-inotify#readme","_id":"inotify@1.4.2","_npmVersion":"5.3.0","_nodeVersion":"8.3.0","_npmUser":{"name":"c4milo","email":"camilo.aguilar@gmail.com"},"maintainers":[{"name":"camilo","email":"camilo@cloudescape.com"},{"name":"c4milo","email":"camilo.aguilar@gmail.com"}],"dist":{"integrity":"sha512-+dq8cO+Um/EiGujOilVGw1AclDq9V4B23z4I+PpytUlgIrWfOG/KxW4k7pRZwHHSoqUzlScCWYuQS8Wa+hYcXg==","shasum":"fd69d0f6e4a55005e338b3c1852fbb81acfb3ccc","tarball":"https://registry.npmjs.org/inotify/-/inotify-1.4.2.tgz"},"_npmOperationalInternal":{"host":"s3://npm-registry-packages","tmp":"tmp/inotify-1.4.2.tgz_1505073926403_0.6098344896454364"},"directories":{},"_from":"inotify@>= 0.1.6","_resolved":"https://registry.npmjs.org/inotify/-/inotify-1.4.2.tgz","_shasum":"fd69d0f6e4a55005e338b3c1852fbb81acfb3ccc","_requested":{"raw":"inotify@>= 0.1.6","scope":null,"escapedName":"inotify","name":"inotify","rawSpec":">= 0.1.6","spec":">=0.1.6","type":"range"},"_spec":"inotify@>= 0.1.6","_where":"C:\\Users\\ivelasco\\Documents\\GitHub\\Topoconcret\\node_modules\\dev","_args":[[{"raw":"inotify@>= 0.1.6","scope":null,"escapedName":"inotify","name":"inotify","rawSpec":">= 0.1.6","spec":">=0.1.6","type":"range"},"C:\\Users\\ivelasco\\Documents\\GitHub\\Topoconcret\\node_modules\\dev"]],"readme":"ERROR: No README data found!"} (current: {"os":"win32","cpu":"x64"})
+144 verbose stack     at checkPlatform (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-install-checks\index.js:45:14)
+144 verbose stack     at thenWarnEngineIssues (C:\Program Files\nodejs\node_modules\npm\lib\install\validate-args.js:41:5)
+144 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\iferr\index.js:13:50
+144 verbose stack     at checkEngine (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-install-checks\index.js:24:10)
+144 verbose stack     at module.exports.isInstallable (C:\Program Files\nodejs\node_modules\npm\lib\install\validate-args.js:38:3)
+144 verbose stack     at resolveWithNewModule (C:\Program Files\nodejs\node_modules\npm\lib\install\deps.js:511:10)
+144 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\install\deps.js:454:9
+144 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\iferr\index.js:13:50
+144 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\fetch-package-metadata.js:37:12
+144 verbose stack     at addRequestedAndFinish (C:\Program Files\nodejs\node_modules\npm\lib\fetch-package-metadata.js:67:5)
+145 verbose pkgid inotify@1.4.2
+146 verbose cwd C:\Users\ivelasco\Documents\GitHub\Topoconcret
+147 error Windows_NT 10.0.14393
+148 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "font-awesome" "--save" "dev"
+149 error node v6.12.3
+150 error npm  v3.10.10
+151 error code EBADPLATFORM
+152 error notsup Unsupported platform for inotify@1.4.2: wanted {"os":"linux","arch":"any"} (current: {"os":"win32","arch":"x64"})
+153 error notsup Valid OS:    linux
+153 error notsup Valid Arch:  any
+153 error notsup Actual OS:   win32
+153 error notsup Actual Arch: x64
+154 verbose exit [ 1, true ]
