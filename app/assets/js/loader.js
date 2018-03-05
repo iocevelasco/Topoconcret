@@ -1,0 +1,1 @@
+var animation=bodymovin.loadAnimation8({container:document.getElementById("loader"),renderer:"svg",loop:!0,autoplay:!0,path:"loader.json"});

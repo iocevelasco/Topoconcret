@@ -72,6 +72,8 @@ var Layout = function () {
        });
     }
 
+
+
     return {
         init: function () {
             handleHeaderOnScroll(); // initial setup for fixed header
@@ -81,11 +83,21 @@ var Layout = function () {
             // handle minimized header on page scroll
             $(window).scroll(function() {
                 handleHeaderOnScroll();
+
             });
         }
     };
 }();
 
+var animation = bodymovin.loadAnimation({
+    container:document.getElementById('loader'),
+    renderer: 'svg',
+    loop:true,
+    autoplay:true,
+    path:'loading.json'
+})
+
 $(document).ready(function() {
+    animation();
     Layout.init();
 });
