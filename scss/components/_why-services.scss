@@ -1,0 +1,24 @@
+.why-services{
+    padding: $space-lg;
+    .why-services--services{
+        min-height: 330px;
+        padding: 0;
+    }
+    .why-services--img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin:$space-md auto;
+        img{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+    .why-services--text{
+        text-align: center;
+        margin:$space-md 0;
+        margin-bottom: $space-lg
+    }
+}

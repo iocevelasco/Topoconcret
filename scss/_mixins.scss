@@ -110,9 +110,9 @@
 }
 
 // eg: @include button-color($color-base, $color-white, transparent, $color-base, 1px, $color-base, $color-base);
-@mixin button-color($btn-color, $btn-color-hover, $btn-bg-color, $btn-bg-hover-color, $btn-border-width, $btn-border-color, $btn-border-hover-color) {
+@mixin button-color($btn-color, $btn-color-hover, $brand-red, $btn-bg-hover-color, $btn-border-width, $btn-border-color, $btn-border-hover-color) {
     color: $btn-color;
-    background: $btn-bg-color;
+    background: $brand-red;
     border-color: $btn-border-color;
     border-width: $btn-border-width;
 

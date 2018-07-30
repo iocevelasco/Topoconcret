@@ -1,0 +1,39 @@
+.analisis-termico{
+    .a-termico--title{
+        width:100%!important;
+        h2{
+            color:$brand-grey-dark;
+            line-height: 1.4;
+            margin-top: 0;
+            font: 300  4rem  $font-family-base;
+            margin-top: 6rem;
+            font-weight: 600;
+            font-size: 6rem;
+                    &:after {
+                    content: "";
+                    display: block;
+                    width: 900px;
+                    height: 4px;
+                    background: $brand-red;
+                    margin: auto;
+                    border-radius: 8px;
+                }
+            }
+        }
+        .a-termico--img{
+            box-shadow: $shadowOne;
+        }
+        .a-termico--icon-section{
+            .service{
+                padding: $font-lg;
+            }
+            .service-icon {
+                text-align: center;
+                font-size: $font-xxlg;
+            }
+            .service-info{
+                text-align: center;
+            }
+        }
+
+}

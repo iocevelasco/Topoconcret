@@ -1,0 +1,112 @@
+
+.paint{
+    background: $brand-grey-ligth;
+    margin-bottom: 8rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    .title-section{
+        margin-bottom: 8rem;
+        border-color: $color-white;
+        margin: auto;
+        margin-bottom: 8rem;
+        text-align: center;
+        padding-left: 0;
+        display: block;
+        float: none;
+        &:before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 180px 0 180px 180px;
+            border-color: transparent transparent transparent $brand-red;
+            position: absolute;
+            top: -158px;
+            left: 0px;
+            border-radius: 10px;
+            @media (max-width: $screen-xs-max) {
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 107px 0 92px 80px;
+                border-color: transparent transparent transparent #ff1321;
+                position: absolute;
+                top: -85px;
+                left: -27px;
+                border-radius: 10px;
+            }
+        }
+    }
+    .service {
+        background: transparent;
+        margin-bottom: 4rem;
+        padding: 50px 40px;
+        background-position: center center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        max-width: 350px;
+        min-height: 350px;
+        min-width: 350px;
+        max-height: 350px;
+        margin: auto;
+        margin-left: 10%;
+        @media (max-width: $screen-xs-max) {
+        margin: auto;
+        margin-bottom: 12rem;
+        max-width: 250px;
+        min-height: 250px;
+        min-width: 250px;
+        max-height: 250px;
+         
+        }
+           .service-element, .service-info {
+            bottom: -25px;
+            background: #ffffffdb;
+            padding: 20px;
+            border-radius: 2px;
+            position: absolute;
+                h3{
+                    font: 300  3.5rem  $font-family-base;
+
+                }
+                @media (max-width: $screen-xs-max) {
+                    left: 0px;
+                    bottom: -70px;
+                    width: 100%;
+                    left: 0;
+                    right: 0;
+                   }
+            }
+           }
+           .service-icon {
+               display: block;
+               font-size: 6rem;
+               color: $color-white;
+               margin-bottom: 30px;
+           }
+       &:hover {
+           .service-element {
+       
+           }
+           .service-info {
+
+       }
+       }
+
+       .bg-exterior{
+        background-image: url("../img/servicio-pintura/exterior.jpg");
+        background-size: cover;
+        background-position: 50%;
+        
+       }
+       .bg-interior{
+        background-image: url("../img/servicio-pintura/interior.jpg");
+        background-position: 70%;
+        background-size: cover;
+ 
+        @media (max-width: $screen-xs-max) {
+            margin-bottom: 4rem;
+           }
+       }
+}

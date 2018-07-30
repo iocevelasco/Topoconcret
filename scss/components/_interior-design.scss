@@ -1,0 +1,36 @@
+.interior-design{
+    padding: 3rem 0;
+    background-image: url("../img/bg/bg-design.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    p , h3 , i{
+        color:$color-white;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+    .service {
+     background: transparent;
+     border: 1px solid #fff;
+     margin-bottom: 4rem;
+     padding: 50px 40px;
+        .service-element, .service-info {
+        
+        }
+        .service-icon {
+            display: block;
+            font-size: 6rem;
+            color: $color-white;
+            margin-bottom: 30px;
+        }
+        &:hover {
+            .service-element {
+        
+            }
+            .service-info {
+            
+            }
+        }
+    }
+}

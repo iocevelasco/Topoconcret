@@ -1,1 +1,10 @@
-var animation=bodymovin.loadAnimation8({container:document.getElementById("loader"),renderer:"svg",loop:!0,autoplay:!0,path:"loader.json"});
+// $(document).ready(function(){
+//         var animation = bodymovin.loadAnimation({
+//                 container: document.getElementById('loader'), // the dom element that will contain the animation
+//                 renderer: 'svg',
+//                 loop: true,
+//                 autoplay: true,
+//                 prerender:true,
+//                 path: 'assets/js/loading.json' // the path to the animation json
+//         });
+// })

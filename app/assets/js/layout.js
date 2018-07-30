@@ -1,1 +1,146 @@
-var Layout=function(){"use strict";var t=function(){$(window).scrollTop()>60?$("body").addClass("page-on-scroll"):$("body").removeClass("page-on-scroll")};return{init:function(){var a,i;t(),a=$(".carousel .item"),i=$(window).height(),a.eq(0).addClass("active"),a.height(i),a.addClass("full-screen"),$(".carousel img").each(function(){var t=$(this).attr("src"),a=$(this).attr("data-color");$(this).parent().css({"background-image":"url("+t+")","background-color":a}),$(this).remove()}),$(window).on("resize",function(){i=$(window).height(),a.height(i)}),$("[data-auto-height]").each(function(){var t=$(this),a=$("[data-height]",t),i=0,e=t.attr("data-mode"),o=parseInt(t.attr("data-offset")?t.attr("data-offset"):0);a.each(function(){"height"==$(this).attr("data-height")?$(this).css("height",""):$(this).css("min-height","");var t="base-height"==e?$(this).outerHeight():$(this).outerHeight(!0);t>i&&(i=t)}),i+=o,a.each(function(){"height"==$(this).attr("data-height")?$(this).css("height",i):$(this).css("min-height",i)}),t.attr("data-related")&&$(t.attr("data-related")).css("height",t.height())}),$(window).scroll(function(){t()})}}}(),animation=bodymovin.loadAnimation({container:document.getElementById("loader"),renderer:"svg",loop:!0,autoplay:!0,path:"loading.json"});$(document).ready(function(){animation(),Layout.init()});
+var Layout = function () {
+    'use strict';
+    
+    // handle on page scroll
+    var handleHeaderOnScroll = function() {
+        if ($(window).scrollTop() > 60) {
+            $('body').addClass('page-on-scroll');
+        } else {
+            $('body').removeClass('page-on-scroll');
+        }
+    }   
+
+    // handle carousel
+    var handleCarousel = function() {
+        var $item = $('.carousel .item'); 
+        var $wHeight = $(window).height();
+        $item.eq(0).addClass('active');
+        $item.height($wHeight); 
+        $item.addClass('full-screen');
+
+        $('.carousel img').each(function() {
+            var $src = $(this).attr('src');
+            var $color = $(this).attr('data-color');
+            $(this).parent().css({
+                'background-image' : 'url(' + $src + ')',
+                'background-color' : $color
+            });
+            $(this).remove();
+        });
+
+        $(window).on('resize', function (){
+            $wHeight = $(window).height();
+            $item.height($wHeight);
+        });
+    }
+
+    // handle group element heights
+    var handleHeight = function() {
+       $('[data-auto-height]').each(function() {
+            var parent = $(this);
+            var items = $('[data-height]', parent);
+            var height = 0;
+            var mode = parent.attr('data-mode');
+            var offset = parseInt(parent.attr('data-offset') ? parent.attr('data-offset') : 0);
+
+            items.each(function() {
+                if ($(this).attr('data-height') == "height") {
+                    $(this).css('height', '');
+                } else {
+                    $(this).css('min-height', '');
+                }
+
+                var height_ = (mode == 'base-height' ? $(this).outerHeight() : $(this).outerHeight(true));
+                if (height_ > height) {
+                    height = height_;
+                }
+            });
+
+            height = height + offset;
+
+            items.each(function() {
+                if ($(this).attr('data-height') == "height") {
+                    $(this).css('height', height);
+                } else {
+                    $(this).css('min-height', height);
+                }
+            });
+
+            if(parent.attr('data-related')) {
+                $(parent.attr('data-related')).css('height', parent.height());
+            }
+       });
+    }
+
+    var Form = (function(){
+
+            $('#btnSend').click(function(){
+        
+                var errores = '';
+        
+                // Validado Nombre ==============================
+                if( $('#names').val() == '' ){
+                    errores += '<p>Escriba un nombre</p>';
+                    $('#names').css("border-bottom-color", "#F14B4B")
+                } else{
+                    $('#names').css("border-bottom-color", "#d1d1d1")
+                }
+        
+                // Validado Correo ==============================
+                if( $('#email').val() == '' ){
+                    errores += '<p>Ingrese un correo</p>';
+                    $('#email').css("border-bottom-color", "#F14B4B")
+                } else{
+                    $('#email').css("border-bottom-color", "#d1d1d1")
+                }
+        
+                // Validado Mensaje ==============================
+                if( $('#mensaje').val() == '' ){
+                    errores += '<p>Escriba un mensaje</p>';
+                    $('#mensaje').css("border-bottom-color", "#F14B4B")
+                } else{
+                    $('#mensaje').css("border-bottom-color", "#d1d1d1")
+                }
+        
+                // ENVIANDO MENSAJE ============================
+                if( errores == '' == false){
+                    var mensajeModal = '<div class="modal_wrap">'+
+                                            '<div class="mensaje_modal">'+
+                                                '<h3>Errores encontrados</h3>'+
+                                                errores+
+                                                '<span id="btnClose">Cerrar</span>'+
+                                            '</div>'+
+                                        '</div>'
+        
+                    $('body').append(mensajeModal);
+                }
+        
+                // CERRANDO MODAL ==============================
+                $('#btnClose').click(function(){
+                    $('.modal_wrap').remove();
+                });
+            });
+        
+        });
+
+        
+
+    return {
+        init: function () {
+            handleHeaderOnScroll(); // initial setup for fixed header
+            handleCarousel(); // initial setup for carousel
+            handleHeight(); // initial setup for group element height
+            Form();
+            // handle minimized header on page scroll
+            $(window).scroll(function() {
+                handleHeaderOnScroll();
+
+            });
+        }
+    };
+}();
+
+
+$(document).ready(function() {
+    Layout.init();
+});

@@ -3,7 +3,7 @@ var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
 var cssnano = require('gulp-cssnano');
-var imagemin = require('gulp-imagemin');
+var imglow = require('gulp-imagemin');
 var autoprefixer = require('gulp-autoprefixer');
 var htmlmin = require('gulp-htmlmin');
 var browserSync = require('browser-sync').create();
@@ -14,8 +14,8 @@ gulp.task('autoPrefixer', () =>
         .pipe(gulp.dest('app/css'))
 );
 
-gulp.task('optimizar', () =>
-    gulp.src('img/*')
+gulp.task('imglow', () =>
+    gulp.src('img/**/*')
         .pipe(imagemin())
         .pipe(gulp.dest('app/img'))
 );
@@ -40,7 +40,7 @@ gulp.task('minify', function() {
 gulp.task('sass', function () {
   gulp.src('scss/**/*.scss')
   .pipe(sass())
-  //.pipe(cssnano())
+  .pipe(cssnano())
   .pipe(autoprefixer({
     browsers: ['last 2 versions'],
     cascade: true
@@ -49,7 +49,7 @@ gulp.task('sass', function () {
   .pipe(browserSync.stream());
 });
 
-gulp.task('serve', ['sass'], function() {
+gulp.task('serve', ['sass','minify'], function() {
   browserSync.init({
       server: "app"
   });
