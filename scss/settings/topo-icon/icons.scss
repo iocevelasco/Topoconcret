@@ -1,0 +1,83 @@
+/*------------------------
+	icons
+-------------------------*/
+@function unicode($str) {
+  @return unquote("\"\\#{$str}\"");
+}
+
+$icon-aa: unicode(ea01);
+$icon-climatizacion: unicode(ea02);
+$icon-facebook: unicode(ea03);
+$icon-filtraciones: unicode(ea04);
+$icon-humedad: unicode(ea05);
+$icon-instagram: unicode(ea06);
+$icon-panel: unicode(ea07);
+$icon-pluviales: unicode(ea08);
+$icon-potable: unicode(ea09);
+$icon-problemas: unicode(ea0a);
+$icon-techos: unicode(ea0b);
+$icon-temperatura: unicode(ea0c);
+$icon-topoconcret-logo: unicode(ea0d);
+$icon-tuberias: unicode(ea0e);
+$icon-whatsapp: unicode(ea0f);
+
+.icon-aa::before {
+  content: $icon-aa;
+}
+
+.icon-climatizacion::before {
+  content: $icon-climatizacion;
+}
+
+.icon-facebook::before {
+  content: $icon-facebook;
+}
+
+.icon-filtraciones::before {
+  content: $icon-filtraciones;
+}
+
+.icon-humedad::before {
+  content: $icon-humedad;
+}
+
+.icon-instagram::before {
+  content: $icon-instagram;
+}
+
+.icon-panel::before {
+  content: $icon-panel;
+}
+
+.icon-pluviales::before {
+  content: $icon-pluviales;
+}
+
+.icon-potable::before {
+  content: $icon-potable;
+}
+
+.icon-problemas::before {
+  content: $icon-problemas;
+}
+
+.icon-techos::before {
+  content: $icon-techos;
+}
+
+.icon-temperatura::before {
+  content: $icon-temperatura;
+}
+
+.icon-topoconcret-logo::before {
+  content: $icon-topoconcret-logo;
+}
+
+.icon-tuberias::before {
+  content: $icon-tuberias;
+}
+
+.icon-whatsapp::before {
+  content: $icon-whatsapp;
+}
+

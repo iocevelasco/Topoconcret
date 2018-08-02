@@ -1,18 +1,13 @@
 .laparoscopia{
     padding: 3rem 0;
-    background-image: url("../img/bg/bg-design.jpg");
+    padding-top: 8rem;
+    background-image: url("../img/home-page/inspeccion-de-tuberias-blur.jpg");
     background-attachment: fixed;
     background-position: center center;
     background-size:cover;
     background-repeat: no-repeat;
-    p , h3 , i{
-        color:$color-white;
-        text-transform: uppercase;
-        font-weight: 300;
-    }
     .laparoscopia--title{
-        width:100%!important;
-        h2{
+         h2{
             color:$brand-grey-dark;
             line-height: 1.4;
             margin-top: 0;
@@ -27,50 +22,39 @@
                     display: block;
                     width: 900px;
                     height: 4px;
-                    background: $brand-red;
+                    background: $color-base;
                     margin:0 0 0 50px;
                     float: right;
                 }
             }
         }
-    .service {
-     background: transparent;
-     margin-bottom: 4rem;
-     padding: 50px 40px;
-        .service-element, .service-info {
-        
-        }
-        .service-icon {
-            display: block;
-            font-size: 6rem;
-            color: $color-white;
-            margin-bottom: 30px;
-        }
-        &:hover {
-            .service-element {
-        
-            }
-            .service-info {
-            
-            }
-        }
-    }
-    .promo-section-img-left{
-        right: 0;
-    }
+
     .laparoscopia--icon-section{
-        .service{
-            padding: $font-lg;
+        padding: $space-lg;
+        padding-top: $space-xl;
+        display: flex;
+        justify-content: center;
+        i{
+            font-size: 70px;
         }
-        .service-icon {
+        .service-element {
             text-align: center;
             font-size: $font-xxlg;
+            color:white;
         }
         .service-info{
-            text-align: center;
+            p{
+                text-align: center;
+                font-size: $font-md;
+                text-transform: capitalize;
+                color:white;
+            }
+    
         }
+
     }
     .laparoscopia--img{
         box-shadow: $shadowOne;
+        padding: $no-space;
     }
 }

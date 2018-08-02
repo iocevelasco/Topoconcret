@@ -1,6 +1,10 @@
 .analisis-termico{
+    padding: $no-space;
+    padding-bottom: $space-lg;
     .a-termico--title{
         width:100%!important;
+        position: absolute;
+        top: 14%;
         h2{
             color:$brand-grey-dark;
             line-height: 1.4;
@@ -9,12 +13,14 @@
             margin-top: 6rem;
             font-weight: 600;
             font-size: 6rem;
+            position: absolute;
+            z-index: 3;
                     &:after {
                     content: "";
                     display: block;
                     width: 900px;
                     height: 4px;
-                    background: $brand-red;
+                    background: $color-base;
                     margin: auto;
                     border-radius: 8px;
                 }
@@ -23,7 +29,9 @@
         .a-termico--img{
             box-shadow: $shadowOne;
         }
+
         .a-termico--icon-section{
+            padding-top: $space-lg;
             .service{
                 padding: $font-lg;
             }
@@ -33,6 +41,19 @@
             }
             .service-info{
                 text-align: center;
+            }
+            .service-element{
+                text-align: center;
+                padding-bottom: 10px;
+                i{
+                    font-size: 70px;
+                }
+            }
+            .service-info{
+                h3{
+                    font-weight: 300;
+                }
+             
             }
         }
 

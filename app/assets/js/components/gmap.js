@@ -30,22 +30,20 @@ window.initMap = function() {
 
   var customMapTypeId = 'custom_style';
 
-  var panama = {lat: 8.975733757019043, lng:-79.51844024658203};
+  var panama = {lat: 8.9701809, lng:-79.5306512};
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 15,
     scrollwheel: false,
     streetViewControl: false,
     mapTypeControl: false,
-    center: panama, // panama.
-    mapTypeControlOptions: {
-      mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
-    }
+    center: panama, // Brooklyn.
+
   });
 
   var contentString = '<div class="box-maps" id="content">'+
     '<div id="siteNotice">'+
     '</div>'+
-    '<h1 id="firstHeading" class="firstHeading"> Panama</h1>'+
+    '<h1 id="firstHeading" class="firstHeading">Panama</h1>'+
     '<div id="bodyContent">'+
     '<p>Av balboa, <br>  Sky Business Center </p>'+
     '</div>'+
@@ -60,7 +58,7 @@ window.initMap = function() {
     map: map,
     clickable: true,
     icon: image,
-    title: 'panama',
+    title: 'Panama',
     position: panama
   });
 
@@ -71,3 +69,4 @@ window.initMap = function() {
   map.mapTypes.set(customMapTypeId, customMapType);
   map.setMapTypeId(customMapTypeId);
 }
+

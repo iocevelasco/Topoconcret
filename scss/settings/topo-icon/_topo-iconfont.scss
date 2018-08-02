@@ -1,0 +1,238 @@
+/* --------------------------------
+
+topo-icon Web Font
+Generated using nucleoapp.com
+
+-------------------------------- */
+@import "variables";
+@import "mixins";
+
+@font-face {
+  font-family: 'topo-icon';
+  src: url('#{$icon-font-path}/topo-icon.eot');
+  src: url('#{$icon-font-path}/topo-icon.eot') format('embedded-opentype'),
+    url('#{$icon-font-path}/topo-icon.woff2') format('woff2'),
+    url('#{$icon-font-path}/topo-icon.woff') format('woff'),
+    url('#{$icon-font-path}/topo-icon.ttf') format('truetype'),
+    url('#{$icon-font-path}/topo-icon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*------------------------
+	base class definition
+-------------------------*/
+
+.icon {
+  display: inline-block;
+  font: normal normal normal 1em/1 'topo-icon';
+  speak: none;
+  text-transform: none;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*------------------------
+  change icon size
+-------------------------*/
+
+/* relative units */
+.icon-sm {
+  font-size: 0.8em;
+}
+.icon-lg {
+  font-size: 1.2em;
+}
+/* absolute units */
+.icon-16 {
+  font-size: 16px;
+}
+.icon-32 {
+  font-size: 32px;
+}
+
+/*----------------------------------
+  add a square/circle background
+-----------------------------------*/
+
+.icon-bg-square,
+.icon-bg-circle {
+  padding: 0.35em;
+  background-color: $icon-background-color;
+}
+
+.icon-bg-circle {
+  border-radius: 50%;
+}
+
+/*------------------------------------
+  use icons as list item markers
+-------------------------------------*/
+
+.icon-ul {
+  padding-left: 0;
+  list-style-type: none;
+
+  > li {
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.4;
+  }
+
+  > li > .icon {
+    margin-right: $icon-li-margin-right;
+    line-height: inherit;
+  }
+}
+
+/*------------------------
+  spinning icons
+-------------------------*/
+
+.icon-is-spinning {
+  -webkit-animation: icon-spin 2s infinite linear;
+  -moz-animation: icon-spin 2s infinite linear;
+  animation: icon-spin 2s infinite linear;
+}
+
+@-webkit-keyframes icon-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes icon-spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@keyframes icon-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/*------------------------
+  rotated/flipped icons
+-------------------------*/
+
+.icon-rotate-90  {
+	@include icon-rotate(90deg, 1);
+}
+
+.icon-rotate-180 {
+	@include icon-rotate(180deg, 2);
+}
+
+.icon-rotate-270 {
+	@include icon-rotate(270deg, 3);
+}
+
+.icon-flip-y {
+	@include icon-flip(-1, 1, 0);
+}
+.icon-flip-x {
+	@include icon-flip(1, -1, 2);
+}
+
+/*------------------------
+	icons
+-------------------------*/
+@function unicode($str) {
+  @return unquote("\"\\#{$str}\"");
+}
+
+$icon-aa: unicode(ea01);
+$icon-climatizacion: unicode(ea02);
+$icon-facebook: unicode(ea03);
+$icon-filtraciones: unicode(ea04);
+$icon-humedad: unicode(ea05);
+$icon-instagram: unicode(ea06);
+$icon-panel: unicode(ea07);
+$icon-pluviales: unicode(ea08);
+$icon-potable: unicode(ea09);
+$icon-problemas: unicode(ea0a);
+$icon-techos: unicode(ea0b);
+$icon-temperatura: unicode(ea0c);
+$icon-topoconcret-logo: unicode(ea0d);
+$icon-tuberias: unicode(ea0e);
+$icon-whatsapp: unicode(ea0f);
+
+.icon-aa::before {
+  content: $icon-aa;
+}
+
+.icon-climatizacion::before {
+  content: $icon-climatizacion;
+}
+
+.icon-facebook::before {
+  content: $icon-facebook;
+}
+
+.icon-filtraciones::before {
+  content: $icon-filtraciones;
+}
+
+.icon-humedad::before {
+  content: $icon-humedad;
+}
+
+.icon-instagram::before {
+  content: $icon-instagram;
+}
+
+.icon-panel::before {
+  content: $icon-panel;
+}
+
+.icon-pluviales::before {
+  content: $icon-pluviales;
+}
+
+.icon-potable::before {
+  content: $icon-potable;
+}
+
+.icon-problemas::before {
+  content: $icon-problemas;
+}
+
+.icon-techos::before {
+  content: $icon-techos;
+}
+
+.icon-temperatura::before {
+  content: $icon-temperatura;
+}
+
+.icon-topoconcret-logo::before {
+  content: $icon-topoconcret-logo;
+}
+
+.icon-tuberias::before {
+  content: $icon-tuberias;
+}
+
+.icon-whatsapp::before {
+  content: $icon-whatsapp;
+}
+
+

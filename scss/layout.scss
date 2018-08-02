@@ -1,62 +1,50 @@
-@import 'mixins'; // Mixins
-@import 'variables'; // Variables
-@import 'utils/colors'; // Variables
+@import 'settings/mixins'; // Mixins
+@import 'settings/variables'; // Variables
+@import 'settings/colors'; // Variables
 
 // Base
 // =================================================================
 
-@import 'base/base'; // Base
-
+@import 'elements/html-element'; // Base
+@import 'objects/button'; // Button
 
 // Components
 // =================================================================
 
 @import 'components/blockquote'; // Blockquote
-@import 'components/button'; // Button
 @import 'components/analisis-termico';
 @import 'components/laparoscopia';
 @import 'components/why-services';
 @import 'components/paint';
-
-
+@import 'components/contact'; // Contact
+@import 'components/footer'; // Footer
+@import 'components/header'; // Header
 // Gui
 // =================================================================
 
-@import 'gui/pricing'; // Pricing
-@import 'gui/promo-section'; // Promo Section
-@import 'gui/service'; // Service
-@import 'gui/work'; // Work
+@import 'settings/gui/pricing'; // Pricing
+@import 'settings/gui/promo-section'; // Promo Section
+@import 'settings/gui/service'; // Service
+@import 'settings/gui/work'; // Work
+@import 'settings/animate';
 
-
-// Layout
-// =================================================================
-
-@import 'layout/footer'; // Footer
-@import 'layout/header'; // Header
-
-
-// Pages
-// =================================================================
-
-@import 'pages/contact'; // Contact
 
 
 // Plugins
 // =================================================================
 
-@import 'plugins/back-to-top'; // Back To Top
-@import 'plugins/bootstrap-components'; // Bootstrap Components
-@import 'plugins/gmap'; // Google Map
-@import 'plugins/masonry'; // Masonry
-@import 'plugins/swiper'; // Swiper
-
-
+@import 'settings/plugins/back-to-top'; // Back To Top
+@import 'settings/plugins/bootstrap-components'; // Bootstrap Components
+@import 'settings/plugins/gmap'; // Google Map
+@import 'settings/plugins/masonry'; // Masonry
+@import 'settings/plugins/swiper'; // Swiper
+@import 'settings/topo-icon/topo-iconfont';
 // Utils
 // =================================================================
 
-@import 'utils/colors'; // Colors
-@import 'utils/helpers'; // Helpers
+@import 'settings/helpers'; // Helpers
 
-// Personal Style
-@import 'icomoon/style';
-@import 'style';
+// custom Style
+
+
+@import 'objects/style';
