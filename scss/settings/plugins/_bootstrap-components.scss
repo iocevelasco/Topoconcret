@@ -5,7 +5,7 @@
 .form-control {
 	height: 50px;
     @include font($size: 14px, $weight: 400);
-    color: $color-subtitle;
+    color: white;
     @include placeholder($color-subtitle);
     background: $color-sky-light;
     border: none;
@@ -14,7 +14,7 @@
     padding-left: 15px;
 
     &:focus {
-    	color: $color-heading;
+    	color:white;
         @include placeholder($color-heading);
         box-shadow: none;
     }
