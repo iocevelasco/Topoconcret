@@ -1,1 +1,0 @@
-var Wow=function(){"use strict";return{init:function(){new WOW({boxClass:"wow",offset:0,mobile:!1,tablet:!1}).init()}}}();$(document).ready(function(){Wow.init()});
