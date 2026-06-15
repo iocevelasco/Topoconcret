@@ -1,72 +1,83 @@
-import { ArrowDown, Phone } from 'lucide-react'
-import { COMPANY } from '../../constants/data'
+import { useEffect, useState } from 'react'
 
 const BASE = '/Topoconcret'
 
+const SLIDES = [
+  { label: 'DETECCIONES',    bg: `${BASE}/header02.gif` },
+  { label: 'REMODELACIONES', bg: `${BASE}/header01.jpg` },
+]
+
 export default function Hero() {
+  const [idx, setIdx] = useState(0)
+  const [fade, setFade] = useState(true)
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setFade(false)
+      setTimeout(() => {
+        setIdx((i) => (i + 1) % SLIDES.length)
+        setFade(true)
+      }, 500)
+    }, 4000)
+    return () => clearInterval(timer)
+  }, [])
+
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background GIF */}
-      <div className="absolute inset-0">
-        <img
-          src={`${BASE}/header02.gif`}
-          alt="Topoconcret detecciones"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-dark/90 via-dark/70 to-dark/40" />
-      </div>
-
-      <div className="section-container relative z-10 pt-24 pb-20">
-        <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 bg-teal/20 border border-teal/40 rounded-full px-4 py-1.5 mb-8">
-            <span className="w-2 h-2 bg-teal rounded-full animate-pulse" />
-            <span className="text-teal text-sm font-medium uppercase tracking-wide">
-              Detecciones · Reparaciones · Panamá
-            </span>
+    <>
+      {/* ── Banner ─────────────────────────────────────────────────── */}
+      <section
+        id="inicio"
+        className="relative h-[72vh] min-h-[460px] flex items-center overflow-hidden"
+      >
+        {/* Slide images — cross-fade via opacity */}
+        {SLIDES.map((slide, i) => (
+          <div
+            key={slide.label}
+            className="absolute inset-0 transition-opacity duration-700"
+            style={{ opacity: i === idx ? 1 : 0 }}
+          >
+            <img
+              src={slide.bg}
+              alt={slide.label}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-dark/55" />
           </div>
+        ))}
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
-            {COMPANY.tagline}
-          </h1>
+        <div className="section-container relative z-10">
+          <div
+            className="transition-opacity duration-300"
+            style={{ opacity: fade ? 1 : 0 }}
+          >
+            <div className="inline-block bg-brand-red px-5 py-2 mb-4">
+              <span className="text-white font-black text-3xl sm:text-4xl lg:text-5xl uppercase tracking-wider">
+                {SLIDES[idx].label}
+              </span>
+            </div>
+          </div>
+          <p className="text-white text-xl sm:text-2xl font-medium">
+            Nuestra prioridad es tu tiempo
+          </p>
+        </div>
+      </section>
 
-          <p className="text-xl sm:text-2xl text-teal font-semibold mb-3">
+      {/* ── Intro below banner ──────────────────────────────────────── */}
+      <div className="bg-white py-14">
+        <div className="max-w-[900px] mx-auto px-4 sm:px-6 text-center">
+          <h1 className="text-3xl sm:text-4xl lg:text-[2.6rem] font-bold text-dark leading-tight mb-4">
             Detecciones y reparaciones de problemas en inmuebles
-          </p>
-          <p className="text-white/70 text-base mb-4">
-            (filtraciones · humedades · vicios ocultos)
-          </p>
-
-          <p className="text-white/80 text-lg max-w-xl mb-10 leading-relaxed">
+          </h1>
+          <h2 className="text-base sm:text-lg text-dark/60 mb-6 font-normal">
+            (filtraciones - humedades - vicios ocultos)
+          </h2>
+          <p className="text-dark/70 text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">
             Encuentre las causas de sus problemas{' '}
-            <span className="text-white font-semibold">rápidamente</span>, al{' '}
-            <span className="text-white font-semibold">menor costo</span> y{' '}
-            <span className="text-teal font-semibold">sin destrucción.</span>
+            <strong className="text-dark font-semibold">rápidamente</strong>, al{' '}
+            <strong className="text-dark font-semibold">menor costo</strong> y sin destrucción.
           </p>
-
-          <div className="flex flex-wrap gap-4">
-            <a href="#contacto" className="btn-primary text-base px-8 py-4">
-              Solicitar Cotización
-            </a>
-            <a
-              href={`tel:${COMPANY.phoneRaw}`}
-              className="flex items-center gap-2 border-2 border-white/40 hover:border-teal
-                         text-white hover:text-teal px-8 py-4 rounded-lg font-semibold
-                         transition-all duration-200"
-            >
-              <Phone size={18} />
-              {COMPANY.phone}
-            </a>
-          </div>
         </div>
       </div>
-
-      <a
-        href="#servicios"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60 hover:text-teal transition-colors animate-bounce"
-        aria-label="Ver servicios"
-      >
-        <ArrowDown size={28} />
-      </a>
-    </section>
+    </>
   )
 }

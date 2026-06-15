@@ -22,12 +22,12 @@
     @apply text-teal text-sm font-semibold uppercase tracking-widest mb-3 block;
   }
   .btn-primary {
-    @apply bg-teal hover:bg-teal-dark text-white font-semibold
+    @apply bg-brand-red hover:bg-brand-red-dark text-white font-semibold
            px-6 py-3 rounded-lg transition-all duration-200
-           hover:scale-105 active:scale-95 inline-block;
+           active:scale-95 inline-block;
   }
   .btn-outline {
-    @apply border-2 border-teal text-teal hover:bg-teal hover:text-white
+    @apply border-2 border-brand-red text-brand-red hover:bg-brand-red hover:text-white
            font-semibold px-6 py-3 rounded-lg transition-all duration-200 inline-block;
   }
   .card {
